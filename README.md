@@ -107,7 +107,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
       }
 
       .button-draw:hover, .button-reset:hover {
-    background-color: #0056b3;
+       background-color: #0056b3;
       }
 ```
 #Cómo usar la aplicación
