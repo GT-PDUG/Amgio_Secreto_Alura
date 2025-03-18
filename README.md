@@ -77,7 +77,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
        Reiniciar
    </button>
 2. Cambio del icono de reiniciar
-```
+```html
     <img src="assets/restart.png" alt="Ícono para reiniciar">
 ```
 ### **CSS**   
