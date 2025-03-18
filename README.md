@@ -67,7 +67,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
        agregarAmigo();
        }
 ```
-## Cambios realizados
+### Cambios realizados
 
 ### **HTML**
 1. Se agregó un botón para reiniciar la lista de amigos:
@@ -110,13 +110,13 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
        background-color: #0056b3;
       }
 ```
-#Cómo usar la aplicación
+### Cómo usar la aplicación
 1. Escribe el nombre de un amigo en el campo de entrada y haz clic en "Añadir" o presiona Enter.
 2. Repite el proceso para agregar más amigos.
 3. Haz clic en "Sortear amigo" para seleccionar un amigo al azar.
 4. Haz clic en "Reiniciar" para vaciar la lista y comenzar de nuevo.
 
-#Créditos
+### Créditos
 Este proyecto fue desarrollado como parte del desafío Amigo Secreto de ALURA para fortalecer habilidades en lógica de programación y manipulación del DOM. `
 
 
