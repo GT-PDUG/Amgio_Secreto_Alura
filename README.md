@@ -36,8 +36,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
    - Al hacer clic en el botón "Sortear amigo", se selecciona un amigo al azar de la lista.
    - El amigo sorteado se muestra en la sección de resultados.
    - El amigo sorteado se elimina automáticamente de la lista para evitar repeticiones.
-
-***
+```app.js
       function sortearAmigo(){
       if(amigo.length === 0){
       alert("No hay amigos para sortear");
@@ -50,26 +49,24 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
          amigo.splice(indiceSorteado, 1);
          renderizarAmigos();
          }
-
+```
 ### 3. **Reiniciar la lista**
    - Al hacer clic en el botón "Reiniciar", se vacía la lista de amigos y se limpia la sección de resultados.
-
-***
+```app.js
       function reiniciarAmigos() {
       amigo = [];
       document.getElementById("listaAmigos").innerHTML = "";
       document.getElementById("resultado").innerHTML = "";
       }
-
+```
 ### 4. **Evento para agregar amigos al presionar Enter**
    - Al presionar la tecla **Enter**, también se agrega el nombre automáticamente.
-
-***
+```app.js
        document.getElementById("amigo").addEventListener("keypress", function(event) {
        if (event.key === "Enter") {
        agregarAmigo();
        }
-
+```
 ## Cambios realizados
 
 ### **HTML**
@@ -80,17 +77,19 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
        Reiniciar
    </button>
 2. Cambio del icono de reiniciar
-***
+```
     <img src="assets/restart.png" alt="Ícono para reiniciar">
+```
 ### **CSS**   
 1. Estilo para alinear los botones horizontalmente:
-***
+```
     document.getElementById("amigo").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         agregarAmigo();
         }
+```
 2. Estilo para los botones:
-***
+```
     .button-draw, .button-reset {
     display: flex;
     align-items: center;
@@ -110,6 +109,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
       .button-draw:hover, .button-reset:hover {
     background-color: #0056b3;
       }
+```
 #Cómo usar la aplicación
 1. Escribe el nombre de un amigo en el campo de entrada y haz clic en "Añadir" o presiona Enter.
 2. Repite el proceso para agregar más amigos.
