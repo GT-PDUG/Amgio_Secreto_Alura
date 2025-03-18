@@ -82,14 +82,14 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
 ```
 ### **CSS**   
 1. Estilo para alinear los botones horizontalmente:
-```
+```style.CSS
     document.getElementById("amigo").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         agregarAmigo();
         }
 ```
 2. Estilo para los botones:
-```
+```style.CSS
     .button-draw, .button-reset {
     display: flex;
     align-items: center;
