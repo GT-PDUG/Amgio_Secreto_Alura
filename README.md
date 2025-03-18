@@ -10,11 +10,10 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
      - No se permite agregar nombres vacíos.
      - No se permite agregar nombres que contengan números.
      - No se permite agregar nombres duplicados.
-   ***
+```app.js
      function agregarAmigo(){
      let inputAmigo = document.getElementById("amigo");
      let nombreAmigo = inputAmigo.value.trim();
-
     if (!nombreAmigo || typeof nombreAmigo !== 'string'){
         alert("Debes ingresar un nombre válido");
         return;
@@ -32,16 +31,18 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
     inputAmigo.focus();
     renderizarAmigos();
 }
+```
 ### 2. **Sortear un amigo**
    - Al hacer clic en el botón "Sortear amigo", se selecciona un amigo al azar de la lista.
    - El amigo sorteado se muestra en la sección de resultados.
    - El amigo sorteado se elimina automáticamente de la lista para evitar repeticiones.
+
 ***
       function sortearAmigo(){
-       if(amigo.length === 0){
-        alert("No hay amigos para sortear");
-        return;
-          }
+      if(amigo.length === 0){
+      alert("No hay amigos para sortear");
+      return;
+      }
          let indiceSorteado = Math.floor(Math.random() * amigo.length);
          let amigoSorteado = amigo[indiceSorteado];
          let resultado = document.getElementById("resultado");
@@ -52,6 +53,7 @@ Este proyecto es una aplicación web que permite gestionar una lista de amigos y
 
 ### 3. **Reiniciar la lista**
    - Al hacer clic en el botón "Reiniciar", se vacía la lista de amigos y se limpia la sección de resultados.
+
 ***
       function reiniciarAmigos() {
       amigo = [];
